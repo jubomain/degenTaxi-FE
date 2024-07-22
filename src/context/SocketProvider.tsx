@@ -36,7 +36,7 @@ const SocketProvider = (props: { children: any }) => {
     // TODO: check why we call the provider twice, we only need one socket
     // TODO: when connecting from firefox we get "unhandledeRejection error"
     // const serverUrl = "https://taxi-bustgame-backend.herokuapp.com";
-    const serverUrl = "localhost:8080";
+    const serverUrl = "https://degen-taxi-be.vercel.app";
 
     const socket = io(serverUrl, {
       transports: ["websocket"],
